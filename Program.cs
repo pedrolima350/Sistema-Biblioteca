@@ -1,6 +1,7 @@
 ﻿
 using System;
 using MySql.Data.MySqlClient;
+using MySql.Data;
 
 class Estoque
 {
@@ -84,13 +85,13 @@ class Estoque
     static void AlugarLivro()
     {
         Console.Write("Nome do Livro: ");
-        string nome = Console.ReadLine();
+        string titulo = Console.ReadLine();
         Console.Write("Quantidade a ser retirada: ");
         int quantidade = int.Parse(Console.ReadLine());
 
         string sql = "SELECT quantidade, preco FROM produtos WHERE nome=@nome";
         MySqlCommand cmd = new MySqlCommand(sql, conexao);
-        cmd.Parameters.AddWithValue("@nome", nome);
+        cmd.Parameters.AddWithValue("@titulo", titulo);
         MySqlDataReader reader = cmd.ExecuteReader();
 
         if (reader.Read())
@@ -102,7 +103,7 @@ class Estoque
                 sql = "UPDATE produtos SET quantidade = quantidade - @quantidade WHERE nome = @nome";
                 cmd = new MySqlCommand(sql, conexao);
                 cmd.Parameters.AddWithValue("@quantidade", quantidade);
-                cmd.Parameters.AddWithValue("@nome", nome);
+                cmd.Parameters.AddWithValue("@titulo", titulo);
                 cmd.ExecuteNonQuery();
                 Console.WriteLine($"Venda realizada! Valor total: R$ {quantidade * preco:F2}");
             }
