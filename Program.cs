@@ -4,7 +4,7 @@ using MySql.Data.MySqlClient;
 
 class Estoque
 {
-    static MySqlConnection conexao;
+     static MySqlConnection conexao;
 
     static void Main()
     {
@@ -20,13 +20,11 @@ class Estoque
             Console.WriteLine(ex.Message);
         }
         
-        CriarTabela();
-
         bool continuar = true;
         while (continuar)
         {
-            Console.WriteLine("1 - Entrada de Produto");
-            Console.WriteLine("2 - Saída de Produto");
+            Console.WriteLine("1 - Adicionar Livros");
+            Console.WriteLine("2 - Alugar");
             Console.WriteLine("3 - Consultar Estoque");
             Console.WriteLine("4 - Sair");
             Console.Write("Escolha uma opção: ");
@@ -35,10 +33,10 @@ class Estoque
             switch (opcao)
             {
                 case 1:
-                    EntradaProduto();
+                    EntradaLivro();
                     break;
                 case 2:
-                    SaidaProduto();
+                    AlugarLivro();
                     break;
                 case 3:
                     ConsultarEstoque();
@@ -55,29 +53,27 @@ class Estoque
         conexao.Close();
     }
 
-    static void CriarTabela()
+    static void EntradaLivro()
     {
-        string sql = @"CREATE TABLE IF NOT EXISTS produtos (
-                        id INTEGER PRIMARY KEY AUTOINCREMENT,
-                        nome TEXT NOT NULL,
-                        quantidade INTEGER NOT NULL,
-                        preco REAL NOT NULL)";
-        MySqlCommand cmd = new MySqlCommand(sql, conexao);
-        cmd.ExecuteNonQuery();
-    }
-
-    static void EntradaProduto() // entrada do produto no estoque
-    {
-        Console.Write("Nome do produto: ");
-        string nome = Console.ReadLine();
-        Console.Write("Quantidade: ");
+        Console.WriteLine("Nome do Livro: ");
+        string titulo = Console.ReadLine();
+        Console.WriteLine("Categoria: ");
+        string categoria = Console.ReadLine();
+        Console.WriteLine("Autor: ");
+        string autor = Console.ReadLine();
+        Console.WriteLine("Editora: ");
+        string editora = Console.ReadLine();
+        Console.WriteLine("Quantidade: ");
         int quantidade = int.Parse(Console.ReadLine());
-        Console.Write("Preço: ");
+        Console.WriteLine("Preço: ");
         double preco = double.Parse(Console.ReadLine());
 
-        string sql = "INSERT INTO produtos (nome, quantidade, preco) VALUES (@nome, @quantidade, @preco)";
+        string sql = "INSERT INTO livro (titulo, categoria, autor, editora, quantidade, preco) VALUES (@titulo, @categoria, @autor, @editora, @quantidade, @preco)";
         MySqlCommand cmd = new MySqlCommand(sql, conexao);
-        cmd.Parameters.AddWithValue("@nome", nome);
+        cmd.Parameters.AddWithValue("@titulo", titulo);
+        cmd.Parameters.AddWithValue("@categoria", categoria);
+        cmd.Parameters.AddWithValue("@autor", autor);
+        cmd.Parameters.AddWithValue("@editora", editora);
         cmd.Parameters.AddWithValue("@quantidade", quantidade);
         cmd.Parameters.AddWithValue("@preco", preco);
         cmd.ExecuteNonQuery();
@@ -85,9 +81,9 @@ class Estoque
         Console.WriteLine("Produto adicionado ao estoque.");
     }
 
-    static void SaidaProduto()
+    static void AlugarLivro()
     {
-        Console.Write("Nome do produto: ");
+        Console.Write("Nome do Livro: ");
         string nome = Console.ReadLine();
         Console.Write("Quantidade a ser retirada: ");
         int quantidade = int.Parse(Console.ReadLine());
