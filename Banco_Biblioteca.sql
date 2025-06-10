@@ -67,23 +67,34 @@ CREATE TABLE pedido (
 );
 
 -- TABELA 9: Título_Pedido
-CREATE TABLE titulo_pedido (
-    cod_ped INT NOT NULL,
-    cod_tit INT NOT NULL,
-    qtd_livro INT NOT NULL CHECK (qtd_livro >= 1),
-    val_livro DECIMAL(10,2) NOT NULL CHECK (val_livro > 0),
-    PRIMARY KEY (cod_ped, cod_tit),
-    FOREIGN KEY (cod_ped) REFERENCES pedido(cod_ped),
-    FOREIGN KEY (cod_tit) REFERENCES titulo(cod_tit)
-);
+-- CREATE TABLE titulo_pedido (
+--     cod_ped INT NOT NULL,
+--     cod_tit INT NOT NULL,
+--     qtd_livro INT NOT NULL CHECK (qtd_livro >= 1),
+--     val_livro DECIMAL(10,2) NOT NULL CHECK (val_livro > 0),
+--     PRIMARY KEY (cod_ped, cod_tit),
+--     FOREIGN KEY (cod_ped) REFERENCES pedido(cod_ped),
+--     FOREIGN KEY (cod_tit) REFERENCES titulo(cod_tit)
+-- );
 
--- TABELA 10: Título_Autor
-CREATE TABLE titulo_autor (
-    cod_tit INT NOT NULL,
-    cod_aut INT NOT NULL,
-    PRIMARY KEY (cod_tit, cod_aut),
-    FOREIGN KEY (cod_tit) REFERENCES titulo(cod_tit),
-    FOREIGN KEY (cod_aut) REFERENCES autor(cod_aut)
+-- -- TABELA 10: Título_Autor
+-- CREATE TABLE titulo_autor (
+--     cod_tit INT NOT NULL,
+--     cod_aut INT NOT NULL,
+--     PRIMARY KEY (cod_tit, cod_aut),
+--     FOREIGN KEY (cod_tit) REFERENCES titulo(cod_tit),
+--     FOREIGN KEY (cod_aut) REFERENCES autor(cod_aut)
+-- );
+
+
+CREATE TABLE livro (
+    cod_livro INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    titulo VARCHAR(100) NOT null,
+    categoria VARCHAR(45) NOT NULL,
+    autor VARCHAR(100) NOT NULL,
+    editora VARCHAR(100) NOT NULL,
+    quantidade INT NOT NULL,
+    preco DECIMAL(10,2) NOT NULL CHECK (preco > 0)
 );
 
 

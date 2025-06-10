@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,24 +11,38 @@ namespace Biblioteca
 {
     internal class Conexao
     {
-
-    public virtual void ConectarBanco(string CaminhoProBanco)
+        public MySqlConnection con { get; set; }
+        public virtual bool ConectarBanco(string CaminhoProBanco)
         {
-            
+
             string Caminho = CaminhoProBanco;
-            MySqlConnection conexao = new MySqlConnection(Caminho);
+
 
             try
             {
-                conexao.Open();
+                con = new MySqlConnection(Caminho);
+                con.Open();
+                Console.WriteLine("Conexão estabelecida");
+                return true;
             }
-            catch (Exception ex)
+            catch (Exception erro)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine("Erro ao conectar");
+                Console.WriteLine(erro.Message);
+                con = null;
+                return false;
             }
 
-            return;
+
         }
 
+        public void Desconectar()
+        {
+            if (con != null)
+            {
+                con.Close();
+                Console.WriteLine("Conexão encerrada.");
+            }
+        }
     }
 }

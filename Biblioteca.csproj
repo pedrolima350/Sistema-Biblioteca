@@ -48,7 +48,7 @@
   <ItemGroup>
     <Compile Include="Cliente.cs" />
     <Compile Include="Conexao.cs" />
-    <Compile Include="Demonstração_INSERT.cs" />
+    <Compile Include="Estoque.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
