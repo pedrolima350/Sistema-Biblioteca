@@ -20,7 +20,10 @@ class Estoque
             Console.WriteLine("1 - Entrada de Produto");
             Console.WriteLine("2 - Saída de Produto");
             Console.WriteLine("3 - Consultar Estoque");
-            Console.WriteLine("4 - Sair");
+            Console.WriteLine("4 - Consultar Livro");
+            Console.WriteLine("5 - Consultar Cliente");
+            Console.WriteLine("6 - Sair");
+
             Console.Write("Escolha uma opção: ");
             int opcao = int.Parse(Console.ReadLine());
 
@@ -36,6 +39,13 @@ class Estoque
                     ConsultarEstoque();
                     break;
                 case 4:
+                    continuar = false;
+                    Livro.ConsultarLivro(conexao);
+                    break;
+                case 5:
+                    Cliente.ConsultarCliente(conexao);
+                    break;
+                case 6:
                     continuar = false;
                     break;
                 default:
