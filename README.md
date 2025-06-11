@@ -17,7 +17,7 @@ Comando de Venda que retira a quantidade de livros digitada
 ## Instalação
 
 -Instalar o MySql/MariaDB e o ligar.
--Rodar o Biblioteca.sql
+-Rodar o Banco_Biblioteca.sql
 -Compilar e executar o Biblioteca.exe
 
 ## Uso

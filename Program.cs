@@ -17,12 +17,15 @@ namespace Biblioteca
             int opcao;
             do
             {
-                Console.WriteLine("BIBLIOTECA .NET");
-                Console.WriteLine("=====================================");
-                Console.WriteLine("1 - Adicionar Livros");
-                Console.WriteLine("2 - Comprar");
-                Console.WriteLine("3 - Consultar Estoque");
-                Console.WriteLine("4 - Sair");
+                Console.WriteLine("======================================");
+                Console.WriteLine("|          BIBLIOTECA .NET           |");
+                Console.WriteLine("======================================");
+                Console.WriteLine("|1 - Adicionar Livros                |");
+                Console.WriteLine("|2 - Comprar                         |");
+                Console.WriteLine("|3 - Consultar Estoque               |");
+                Console.WriteLine("|4 - Sair                            |");
+                Console.WriteLine("======================================");
+
                 Console.Write("Escolha uma opção: ");
                 opcao = int.Parse(Console.ReadLine());
 
@@ -47,7 +50,7 @@ namespace Biblioteca
                         Console.WriteLine("Opção inválida.");
                         break;
                 }
-            } while (opcao != 4);
+            }while (opcao != 4);
 
 
         }

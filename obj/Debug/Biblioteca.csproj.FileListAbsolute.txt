@@ -37,3 +37,16 @@ C:\Users\Tecnico\Desktop\loja-c-\obj\Debug\Biblioteca.csproj.CoreCompileInputs.c
 C:\Users\Tecnico\Desktop\loja-c-\obj\Debug\Biblioteca.csproj.Up2Date
 C:\Users\Tecnico\Desktop\loja-c-\obj\Debug\Biblioteca.exe
 C:\Users\Tecnico\Desktop\loja-c-\obj\Debug\Biblioteca.pdb
+C:\Users\aluno\Desktop\loja-c-\bin\Debug\Biblioteca.exe.config
+C:\Users\aluno\Desktop\loja-c-\bin\Debug\Biblioteca.exe
+C:\Users\aluno\Desktop\loja-c-\bin\Debug\Biblioteca.pdb
+C:\Users\aluno\Desktop\loja-c-\bin\Debug\MySql.Data.dll
+C:\Users\aluno\Desktop\loja-c-\bin\Debug\System.Memory.dll
+C:\Users\aluno\Desktop\loja-c-\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\aluno\Desktop\loja-c-\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\aluno\Desktop\loja-c-\bin\Debug\System.Buffers.dll
+C:\Users\aluno\Desktop\loja-c-\obj\Debug\Biblioteca.csproj.AssemblyReference.cache
+C:\Users\aluno\Desktop\loja-c-\obj\Debug\Biblioteca.csproj.CoreCompileInputs.cache
+C:\Users\aluno\Desktop\loja-c-\obj\Debug\Biblioteca.csproj.Up2Date
+C:\Users\aluno\Desktop\loja-c-\obj\Debug\Biblioteca.exe
+C:\Users\aluno\Desktop\loja-c-\obj\Debug\Biblioteca.pdb
