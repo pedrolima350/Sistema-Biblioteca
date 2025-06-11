@@ -24,3 +24,16 @@ C:\Users\Morning_Coffee\Desktop\code\loja-c-\bin\Debug\System.Threading.Tasks.Ex
 C:\Users\Morning_Coffee\Desktop\code\loja-c-\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\Morning_Coffee\Desktop\code\loja-c-\bin\Debug\System.Buffers.dll
 C:\Users\Morning_Coffee\Desktop\code\loja-c-\obj\Debug\Biblioteca.csproj.Up2Date
+C:\Users\Tecnico\Desktop\loja-c-\bin\Debug\Biblioteca.exe.config
+C:\Users\Tecnico\Desktop\loja-c-\bin\Debug\Biblioteca.exe
+C:\Users\Tecnico\Desktop\loja-c-\bin\Debug\Biblioteca.pdb
+C:\Users\Tecnico\Desktop\loja-c-\bin\Debug\MySql.Data.dll
+C:\Users\Tecnico\Desktop\loja-c-\bin\Debug\System.Memory.dll
+C:\Users\Tecnico\Desktop\loja-c-\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Tecnico\Desktop\loja-c-\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Tecnico\Desktop\loja-c-\bin\Debug\System.Buffers.dll
+C:\Users\Tecnico\Desktop\loja-c-\obj\Debug\Biblioteca.csproj.AssemblyReference.cache
+C:\Users\Tecnico\Desktop\loja-c-\obj\Debug\Biblioteca.csproj.CoreCompileInputs.cache
+C:\Users\Tecnico\Desktop\loja-c-\obj\Debug\Biblioteca.csproj.Up2Date
+C:\Users\Tecnico\Desktop\loja-c-\obj\Debug\Biblioteca.exe
+C:\Users\Tecnico\Desktop\loja-c-\obj\Debug\Biblioteca.pdb

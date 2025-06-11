@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cliente.cs" />
     <Compile Include="Conexao.cs" />
     <Compile Include="Estoque.cs" />
     <Compile Include="Program.cs" />

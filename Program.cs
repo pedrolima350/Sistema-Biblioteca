@@ -10,7 +10,7 @@ namespace Biblioteca
     {
         static void Main()
         {
-            string caminhoBanco = "server=127.0.0.1;uid=root;pwd=;database=Biblioteca";
+            string caminhoBanco = "server=127.0.0.1;uid=root;pwd=root;database=Biblioteca";
             var conexao = new Conexao();
             conexao.ConectarBanco(caminhoBanco);
             Estoque estoque = new Estoque();
@@ -22,9 +22,7 @@ namespace Biblioteca
                 Console.WriteLine("1 - Adicionar Livros");
                 Console.WriteLine("2 - Comprar");
                 Console.WriteLine("3 - Consultar Estoque");
-                //Console.WriteLine("4 - Alugar");
                 Console.WriteLine("4 - Sair");
-                //Console.WriteLine("5 - Demonstração Inserts");
                 Console.Write("Escolha uma opção: ");
                 opcao = int.Parse(Console.ReadLine());
 
@@ -42,16 +40,9 @@ namespace Biblioteca
                         Console.Clear();
                         estoque.ConsultarEstoque(conexao);
                         break;
-                    //case 4:
-                    //    estoque.AlugarLivro(conexao);
-                    //    break;
                     case 4:
                         Console.WriteLine("Finalizando...");
                         break;
-                    //case 5:
-                    //    Console.Clear();
-                    //    estoque.demoInserts(conexao);
-                    //    break;
                     default:
                         Console.WriteLine("Opção inválida.");
                         break;
