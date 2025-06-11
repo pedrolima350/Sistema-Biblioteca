@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Morning_Coffee\\Desktop\\code\\loja-c-\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{780FE2D7-50C2-4CA7-98BA-35AC25E5AAFA}|Biblioteca.csproj|C:\\Users\\Morning_Coffee\\Desktop\\code\\loja-c-\\estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{780FE2D7-50C2-4CA7-98BA-35AC25E5AAFA}|Biblioteca.csproj|solutionrelative:estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{780FE2D7-50C2-4CA7-98BA-35AC25E5AAFA}|Biblioteca.csproj|c:\\users\\morning_coffee\\desktop\\code\\loja-c-\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{780FE2D7-50C2-4CA7-98BA-35AC25E5AAFA}|Biblioteca.csproj|C:\\Users\\Morning_Coffee\\Desktop\\code\\loja-c-\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{780FE2D7-50C2-4CA7-98BA-35AC25E5AAFA}|Biblioteca.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{780FE2D7-50C2-4CA7-98BA-35AC25E5AAFA}|Biblioteca.csproj|C:\\Users\\Morning_Coffee\\Desktop\\code\\loja-c-\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{780FE2D7-50C2-4CA7-98BA-35AC25E5AAFA}|Biblioteca.csproj|solutionrelative:conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{780FE2D7-50C2-4CA7-98BA-35AC25E5AAFA}|Biblioteca.csproj|c:\\users\\morning_coffee\\desktop\\code\\loja-c-\\estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{780FE2D7-50C2-4CA7-98BA-35AC25E5AAFA}|Biblioteca.csproj|solutionrelative:estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{780FE2D7-50C2-4CA7-98BA-35AC25E5AAFA}|Biblioteca.csproj|C:\\Users\\Morning_Coffee\\Desktop\\code\\loja-c-\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,30 +26,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Conexao.cs",
               "DocumentMoniker": "C:\\Users\\Morning_Coffee\\Desktop\\code\\loja-c-\\Conexao.cs",
               "RelativeDocumentMoniker": "Conexao.cs",
               "ToolTip": "C:\\Users\\Morning_Coffee\\Desktop\\code\\loja-c-\\Conexao.cs",
               "RelativeToolTip": "Conexao.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T15:21:44.925Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Estoque.cs",
               "DocumentMoniker": "C:\\Users\\Morning_Coffee\\Desktop\\code\\loja-c-\\Estoque.cs",
               "RelativeDocumentMoniker": "Estoque.cs",
               "ToolTip": "C:\\Users\\Morning_Coffee\\Desktop\\code\\loja-c-\\Estoque.cs",
               "RelativeToolTip": "Estoque.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAowHkAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T15:41:35.35Z",
               "EditorCaption": ""
@@ -64,18 +64,17 @@
               "RelativeToolTip": "Cliente.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T01:02:50.081Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T01:02:50.081Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Morning_Coffee\\Desktop\\code\\loja-c-\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Morning_Coffee\\Desktop\\code\\loja-c-\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwBUAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwC8AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-03T22:47:34.81Z",
               "EditorCaption": ""

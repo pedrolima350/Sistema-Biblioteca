@@ -11,6 +11,7 @@ namespace Biblioteca
 {
     internal class Conexao
     {
+
         public MySqlConnection con { get; set; }
         public virtual bool ConectarBanco(string CaminhoProBanco)
         {
