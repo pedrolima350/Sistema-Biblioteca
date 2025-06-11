@@ -38,14 +38,13 @@ CREATE TABLE pedido (
 
 -- TABELA DE LIVROS MODIFICADA PARA UTILIZAR CHAVES ESTRANGEIRAS
 CREATE TABLE livro (
+
     cod_livro INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    titulo VARCHAR(100) NOT NULL,
-    cod_cat INT NOT NULL,
-    cod_aut INT NOT NULL,
-    cod_edit INT NOT NULL,
+    titulo VARCHAR(100) NOT null,
+    categoria VARCHAR(45) NOT NULL,
+    autor VARCHAR(100) NOT NULL,
+    editora VARCHAR(100) NOT NULL,
     quantidade INT NOT NULL,
-    preco DECIMAL(10,2) NOT NULL CHECK (preco > 0),
-    FOREIGN KEY (cod_cat) REFERENCES categoria(cod_cat),
-    FOREIGN KEY (cod_aut) REFERENCES autor(cod_aut),
-    FOREIGN KEY (cod_edit) REFERENCES editora(cod_edit)
+    preco DECIMAL(10,2) NOT NULL CHECK (preco > 0)
+
 );
